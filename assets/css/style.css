@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "info img";
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-area {
+  grid-area: img;
+  background-image: url("../images/side-image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.info-area {
+  grid-area: info;
+  background-color: #000000;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+  padding: 40px 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #24221f;
+  padding: 50px 0px;
+  margin: 30px 80px;
+}
+.info {
+  margin-bottom: 20px;
+}
+.info img {
+  margin-right: 10px;
+}
+.info h1 {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #d4ccb6;
+}
+.info span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #afb6c2;
+}
+
+.div-default {
+  margin-bottom: 20px;
+}
+.default {
+  border: 1px solid #afb6c2;
+  border-radius: 4px;
+  padding: 8px;
+}
+.default:focus-within {
+  border: 1px solid #ffc632;
+  box-shadow: 0px 0px 0px 2px #ffde88;
+}
+.input-default {
+  background-color: #24221f;
+  border: none;
+  outline: none;
+}
+.input-default::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a9afb9;
+}
+
+label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #afb6c2;
+}
+.input-default {
+  color: #afb6c2;
+  margin-left: 5px;
+  width: 100%;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.email-area,
+.password-area {
+  display: flex;
+}
+.email-area div,
+.password-area div {
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type="checkbox" i] {
+  border: 1px solid #868686;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+}
+.remind {
+  display: flex;
+  align-items: center;
+}
+.remind-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 5px;
+}
+.bottom a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffc632;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px 24px;
+  background: #ffc632;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #473404;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffc632;
+  text-decoration: none;
+}
+
+@media (min-width: 553px) and (max-width: 1023px) {
+  .container {
+    display: flex;
+  }
+  .img-area {
+    background-image: none;
+  }
+  .info-area {
+    width: 100%;
+  }
+
+  .logo img {
+    height: 140px;
+    margin: 30px;
+  }
+
+  .form {
+    padding: 80px 0px;
+    margin: 100px 80px;
+  }
+}
+
+@media (max-width: 552px) {
+  .container {
+    display: flex;
+  }
+  .img-area {
+    background-image: none;
+  }
+  .info-area {
+    width: 100%;
+  }
+  .form {
+    padding: 40px 0px;
+    margin: 20px 20px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 347px) {
+  .logo img {
+    height: 95px;
+    padding: 30px 30px;
+  }
+
+  .default {
+    padding: 7px;
+    width: 90%;
+  }
+
+  .form {
+    padding-left: 25px;
+  }
+  .info h1 {
+    font-size: 20px;
+  }
+  .info span {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .bottom {
+    display: block;
+  }
+  .bottom a {
+    font-size: 14px;
+  }
+  .remind-label {
+    font-size: 14px;
+  }
+  .remind {
+    margin-bottom: 5px;
+  }
+  input[type="checkbox" i] {
+    width: 14px;
+    height: 14px;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  .sign-up {
+    font-size: 13px;
+    width: 201px;
+    text-align: center;
+  }
+}
+
+@media (min-height: 280px) and (max-height: 540px) {
+  .container {
+    height: auto;
+  }
+  .logo img {
+    height: 95px;
+    padding: 30px 30px;
+    margin: 20px;
+  }
+
+  .default {
+    padding: 7px;
+    width: 90%;
+  }
+
+  .form {
+    padding: 50px 0px;
+    margin: 30px 100px;
+  }
+  .info h1 {
+    font-size: 20px;
+  }
+  .info span {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .bottom {
+    display: block;
+  }
+  .bottom a {
+    font-size: 14px;
+  }
+  .remind-label {
+    font-size: 14px;
+  }
+  .remind {
+    margin-bottom: 5px;
+  }
+  input[type="checkbox" i] {
+    width: 14px;
+    height: 14px;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  .sign-up {
+    font-size: 13px;
+    width: 201px;
+    text-align: center;
+  }
+}

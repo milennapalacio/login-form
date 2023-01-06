@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info-area">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </div>
+
+        <div class="form">
+          <form action="POST">
+            <div class="info">
+              <h1>
+                <img src="assets/images/log-in.svg" alt="longin" />Faça seu
+                login
+              </h1>
+              <span>Entre com suas informações de cadastro.</span>
+            </div>
+
+            <div class="email div-default">
+              <label for="email">E-mail</label>
+
+              <div class="email-area default">
+                <div><img src="assets/images/mail.svg" alt="mail" /></div>
+                <input
+                  class="input-default"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Digite seu e-mail"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="password div-default">
+              <label for="password">Senha</label>
+
+              <div class="password-area default">
+                <div><img src="assets/images/lock.svg" alt="lock" /></div>
+                <input
+                  class="input-default"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Digite sua senha"
+                  required
+                />
+                <div>
+                  <img src="assets/images/eye.svg" alt="eye" />
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="remind">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                />
+                <label for="checkbox" class="remind-label">Lembre-me</label>
+              </div>
+              <a href="">Esqueci minha senha</a>
+            </div>
+            <a href=""><button>Entrar</button></a>
+            <a href="" class="sign-up">Não tem uma conta? Registre-se</a>
+          </form>
+        </div>
+      </div>
+      <div class="img-area"></div>
+    </div>
+  </body>
+</html>
