@@ -46,7 +46,7 @@
               <div class="password-area default">
                 <div><img src="assets/images/lock.svg" alt="lock" /></div>
                 <input
-                  class="input-default"
+                  class="input-default senha"
                   type="password"
                   name="password"
                   id="password"
@@ -54,7 +54,9 @@
                   required
                 />
                 <div>
-                  <img src="assets/images/eye.svg" alt="eye" />
+                  <button class="senha" onclick="clicou()">
+                    <img src="assets/images/eye.svg" alt="eye" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -71,12 +73,13 @@
               </div>
               <a href="">Esqueci minha senha</a>
             </div>
-            <a href=""><button>Entrar</button></a>
+            <a href=""><button class="entrar">Entrar</button></a>
             <a href="" class="sign-up">Não tem uma conta? Registre-se</a>
           </form>
         </div>
       </div>
       <div class="img-area"></div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

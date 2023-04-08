@@ -118,6 +118,11 @@ input:focus::-webkit-input-placeholder {
   align-items: center;
 }
 
+.senha {
+  background-color: transparent;
+  border: none;
+}
+
 .bottom {
   display: flex;
   align-items: center;
@@ -149,7 +154,8 @@ input[type="checkbox" i] {
   text-decoration: none;
 }
 
-button {
+/*button*/
+.entrar {
   width: 100%;
   padding: 12px 24px;
   background: #ffc632;
@@ -263,7 +269,8 @@ button {
     height: 14px;
   }
 
-  button {
+  /*button*/
+  .entrar {
     width: 90%;
   }
 
@@ -322,7 +329,8 @@ button {
     height: 14px;
   }
 
-  button {
+  /*button*/
+  .entrar {
     width: 90%;
   }
 
